@@ -1,0 +1,135 @@
+            /*DESKTOP*/
+
+  .navbar {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #003473;
+    position: fixed;
+    width: 100%;
+    padding: 0.5em;
+    opacity: 86%;
+    z-index: 9999;
+    
+  }
+  
+  .navbar-brand a img {
+    height: 50px;
+  }
+  .navbar ul li img{
+    height: 25px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navbar ul li {
+    margin-left: 30px;
+  }
+
+  #nav-item-1 a{
+    padding: 0.7em;
+    background-color: #5AD3DF;
+    border-radius: 30px;
+    text-align: center;
+    color: #003473 ;
+  }
+  
+  .navbar ul li a {
+    color: #FAFAFA;
+    text-decoration: none;
+    font-size: 1.2vw;
+    white-space: nowrap;
+   
+  }
+
+           /*MOVIL*/
+
+  @media (max-width: 768px) {
+    .navbar ul {
+      position: absolute;
+      top: 8vh;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #003473;
+      flex-direction: column;
+      justify-content: center;
+  }
+    #nav-item-1 a{
+      padding: 0;
+    background-color:transparent;
+    border-radius: 0;
+    text-align: center;
+    color: #003473 ;
+    }
+    .navbar ul li a {
+      color: #FAFAFA;
+      font-size: 3vw;
+    }
+  
+    .navbar ul.show {
+      opacity: 1;
+      pointer-events: all;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+
+            /*ICONO*/
+
+    .menu-icon {
+      position: relative;
+      width: 25px;
+      height: 15px;
+    }
+    
+    .line {
+      position: absolute;
+      height: 2px;
+      background-color: #FAFAFA;
+     
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .line:nth-child(1) {
+      width: 60%;
+      height: 4px;
+      transform: rotate(-50deg);
+      top: 50%;
+      left: 50%;
+      margin-top: -10px;
+      margin-left: -40px;
+    }
+    
+    .line:nth-child(2) {
+      width: 150%;
+      height: 4px;
+      transform: rotate(-50deg);
+      top: 50%;
+      left: 50%;
+      margin-top: 0px;
+      margin-left: -170%;
+      
+    }
+    
+    .line:nth-child(3) {
+      width: 60%;
+      height: 4px;
+      transform: rotate(-50deg);
+      top: 50%;
+      left: 50%;
+      margin-top: 9px;
+      margin-left: -20px;
+    }
+    
+    .menu-icon:hover .line {
+      background-color: #FF7E54;
+    }
+
+    
+  }
